@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
-import { ReactLenis } from "@/lib/Lenis";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
