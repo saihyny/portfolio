@@ -1,11 +1,14 @@
 "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
-
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 
 const RecentProjects = () => {
+  
+  const rounterFn = (link:string)=>{
+    window.open(link, "_blank"); // Opens the link in a new tab
+  }
   return (
     <div className="py-20">
       <h1 className="heading">
@@ -14,7 +17,7 @@ const RecentProjects = () => {
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
-          <div
+          <div onClick={()=>rounterFn(item.link)}
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
@@ -65,7 +68,7 @@ const RecentProjects = () => {
                   ))}
                 </div>
 
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center" >
                   <p className="flex lg:text-xl md:text-xs text-sm text-purple">
                     Check Live Site
                   </p>
