@@ -207,6 +207,7 @@ const ShaderMaterial = ({
     const timeLocation = material.uniforms.u_time;
     timeLocation.value = timestamp;
   });
+  
 
   const getUniforms = () => {
     const preparedUniforms: any = {};
