@@ -1,5 +1,4 @@
 export const navItems = [
-  { name: "Home", link: "/" },
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
@@ -76,7 +75,7 @@ export const projects = [
     title: "Innovative Cleanroom and HVAC Solutions",
     des: "This site showcases the company's services and expertise with a modern design, smooth navigation, and optimized performance..",
     img: "/project-1.png",
-    iconLists: ["/next.svg", "/tail.svg", "/fm.svg"],
+    iconLists: ["/next.svg", "/tail.svg",],
     link: "https://kshetracleantech.netlify.app/",
   },
   {
@@ -151,8 +150,8 @@ export const workExperience = [
 
   {
     id: 1,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Freelance Web Dev Projects",
+    desc:"Led the development of a web application for a client, from initial concept to deployment.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
